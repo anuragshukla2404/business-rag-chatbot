@@ -1,0 +1,8 @@
+langchain
+langchain-core
+langchain-openai
+langchain-pinecone
+pinecone-notebooks
+streamlit
+python-dotenv
+pypdf
