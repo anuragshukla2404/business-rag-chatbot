@@ -40,7 +40,7 @@ index = pc.Index(index_name)
 def retrieve_results():
 
     if 'vectors' not in st.session_state:
-        st.session_state.loader = PyPDFLoader('RAG business chatbot/business/Business Management And Organization Booklet.pdf')
+        st.session_state.loader = PyPDFLoader('business/Business Management And Organization Booklet.pdf')
         st.session_state.docs = st.session_state.loader.load() 
         st.session_state.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200 )
         st.session_state.documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:30])
